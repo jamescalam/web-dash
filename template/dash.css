@@ -1,0 +1,62 @@
+html * {
+   font-size: 16px;
+   color: #282828;
+   font-family: 'Nunito', sans-serif;
+   line-height: 1.5;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+body {
+  height: 200vh;
+}
+
+.header {
+  height: 50%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  margin-bottom: 10px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin:10px;
+}
+
+svg {
+  height: auto;
+  width: 100%;
+}
+
+rect {
+  fill: white;
+  fill-opacity: 0.8;
+}
+
+circle {
+  fill: white;
+  fill-opacity: 0.8;
+}
+
+.bgimg {
+    background-image: url('../assets/Technical-Financial-photo_1.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
