@@ -1,5 +1,5 @@
 html * {
-   font-size: 16px;
+   font-size: 2vw;
    color: #FFF;
    font-family: Din-Light, Arial, sans-serif;
    line-height: 1.45;
@@ -7,6 +7,7 @@ html * {
 
 @font-face {
     font-family: Din-Light;
+    src: url("../assets/DINLight.ttf") format("truetype");
     src: url("../assets/DIN Light Regular.otf") format("opentype");
 }
 /*
@@ -14,7 +15,7 @@ font-family: 'Nunito', sans-serif;
 */
 
 h1 {
-  font-size: 2rem;
+  font-size: 1em;
   text-align: center;
 }
 
@@ -32,7 +33,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -90%);
   animation: fadeQuotes 20s infinite;
 }
 .header h1:nth-child(2) {
@@ -65,19 +66,19 @@ body {
 
 .arrow {
   position: absolute;
-  top: 80%;
+  bottom: 10%;
   left: 50%;
   transform: translate(-50%, -50%)
 }
 
 .arrow span {
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 1.5em;
+  height: 1.5em;
   border-bottom: 2px solid #fff;
   border-right: 2px solid #fff;
   transform: rotate(45deg);
-  margin: -20px;
+  margin: -0.5em;
   animation: animate 3s infinite;
 }
 
@@ -94,14 +95,14 @@ body {
 @keyframes animate {
   0% {
     opacity: 0;
-    transform: rotate(45deg) translate(-30px,-30px);
+    transform: rotate(45deg) translate(-1em,-1em);
   }
   50% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-    transform: rotate(45deg) translate(30px,30px);
+    transform: rotate(45deg) translate(2em,2em);
   }
 }
 
