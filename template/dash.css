@@ -1,12 +1,20 @@
 html * {
    font-size: 16px;
-   color: #282828;
-   font-family: 'Nunito', sans-serif;
-   line-height: 1.5;
+   color: #FFF;
+   font-family: Din-Light, Arial, sans-serif;
+   line-height: 1.45;
 }
 
+@font-face {
+    font-family: Din-Light;
+    src: url("../assets/DIN Light Regular.otf") format("opentype");
+}
+/*
+font-family: 'Nunito', sans-serif;
+*/
+
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -18,6 +26,41 @@ body {
 
 .header {
   height: 100vh;
+}
+
+.header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeQuotes 20s infinite;
+}
+.header h1:nth-child(2) {
+  animation-delay: -5s
+}
+.header h1:nth-child(3) {
+  animation-delay: -10s
+}
+.header h1:nth-child(4) {
+  animation-delay: -15s
+}
+
+@keyframes fadeQuotes {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .arrow {
