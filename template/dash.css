@@ -1,5 +1,5 @@
 html * {
-   font-size: 2vw;
+   font-size: 2vmin;
    color: #FFF;
    font-family: Din-Light, Arial, sans-serif;
    line-height: 1.45;
@@ -15,7 +15,7 @@ font-family: 'Nunito', sans-serif;
 */
 
 h1 {
-  font-size: 1em;
+  font-size: 2em;
   text-align: center;
 }
 
